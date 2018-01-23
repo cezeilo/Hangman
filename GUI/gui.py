@@ -1,8 +1,5 @@
-from tkinter import *
-from tkinter import Canvas
-import string
 import tkinter.messagebox
-from code import *
+from Code.code import *
 
 # ~ Choose a topic ~ #
 Topic_Of_The_Game = ""
@@ -41,7 +38,7 @@ start.mainloop()
 # ~ Start the main game ~ #
 
 root = Tk()
-test = TheCode(Topic_Of_The_Game)
+test = TheCode("TopicList/" + Topic_Of_The_Game)
 canvas = Canvas(root)
 topic = Label(root, text="Your Topic is: " + Topic_Of_The_Game)
 topic.pack()
